@@ -278,7 +278,7 @@ Los resultados resumidos son los siguientes:
 
 La Energía se expresa indistintamente como potencia media (MWmedios) o como energía anual (GWh/año). La conversión entre ambas se obtiene multiplicando la potencia media por las horas del año:
 
-$$E[\text{GWh/año}] = P_{\text{media}}[\text{MW}] \times 8{,}760\ \text{h}$$
+$$E\,[\mathrm{GWh}] = P_{\mathrm{media}}\,[\mathrm{MW}] \times 8{.}760\ \mathrm{h}$$
 
 En el cuadro siguiente se muestran los 22 emplazamientos con Potencia igual o superior a 5 MW, que en principio podrían ser estimados como posibles de ser realizados.
 
@@ -342,9 +342,9 @@ Hay varios tipos de baterías, pero las de “iones de litio (Li-ion)” son las
 
 La energía anual generable se relaciona con la potencia instalada y el factor de capacidad:
 
-$$E = P_{\text{inst}} \times 8{,}760\ \text{h} \times FC$$
+$$E\,[\mathrm{GWh}] = P_{\mathrm{inst}}\,[\mathrm{MW}] \times 8{.}760\ \mathrm{h} \times FC$$
 
-Donde $P_{\text{inst}}$ es la potencia instalada, $FC$ el factor de capacidad (típicamente $0{,}20$ a $0{,}30$ para solar) y $8{,}760$ las horas del año.
+Donde $P_{\mathrm{inst}}$ es la potencia instalada, $FC$ el factor de capacidad (típicamente $0{,}20$ a $0{,}30$ para solar) y $8.760$ las horas del año.
 
 **Situación nacional:**
 Para conocer mejor las características energéticas del sol en una determinada región se requieren conocimiento de la cantidad y distribución de la radiación solar que incide en un lugar determinado, y de su variación temporal a lo largo de los ciclos diario, mensual y anual.
