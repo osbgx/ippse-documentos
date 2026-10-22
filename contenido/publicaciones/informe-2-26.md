@@ -6,7 +6,7 @@ autor: "Comité Ejecutivo"
 extracto: "Parte II del análisis del IPPSE sobre el riesgo de crisis energética 2026–2035: evalúa hidroeléctricas binacionales y de ríos interiores, solar con bancos de baterías, eólica, térmica, nuclear (SMR) e interconexiones con Brasil y Argentina, con plazos de habilitación de 3 a 15 años."
 lectura: 51
 estado: publicado
-pdf: /documentos/informe-2-26.pdf
+pdf: informe-2-26.pdf
 etiquetas: ["generación", "planificación energética", "transmisión"]
 destacado: true
 ---
