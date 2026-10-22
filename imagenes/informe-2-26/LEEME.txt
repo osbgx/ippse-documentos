@@ -1,0 +1,2 @@
+Poné aquí las imágenes del informe "informe-2-26".
+Se referencian desde el .md con rutas relativas: ../imagenes/informe-2-26/portada.png
