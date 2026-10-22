@@ -40,6 +40,10 @@ ippse-documentos/
 
 Los nombres de archivo que empiezan con `_` o `.` se ignoran (sirven para borradores).
 
+> **Sobre la actualización:** al publicar, el sitio tarda unos minutos en regenerarse. Cuando lo
+> hace, fija el *commit* exacto de este repositorio y lee los archivos de ahí, así que siempre
+> muestra la versión correcta: no hay que esperar a que se refresque ninguna caché.
+
 ## Formato del archivo
 
 ```markdown
