@@ -17,6 +17,8 @@ ippse-documentos/
 │   └── publicaciones/             ← un archivo .md por informe o publicación
 │       ├── informe-2-26.md
 │       └── ...
+├── documentos/                    ← PDFs oficiales de los informes
+│   └── informe-2-26.pdf
 ├── imagenes/                      ← imágenes de los informes
 │   └── informe-2-26/              ← una carpeta por publicación (mismo id que el .md)
 │       └── portada.png
@@ -31,8 +33,10 @@ ippse-documentos/
 2. Escribí la cabecera YAML (frontmatter) con los datos del informe y, debajo, el contenido
    en Markdown.
 3. Si el informe lleva imágenes, ponélas en `imagenes/<id>/` y referencialas con rutas
-   relativas (`../imagenes/<id>/portada.png`).
-4. Subí los cambios. El sitio se regenera solo.
+   relativas (`../../imagenes/<id>/portada.png`).
+4. Si el informe tiene un PDF oficial, ponelo en `documentos/` y declaralo en el frontmatter
+   con `pdf: informe-2-26.pdf` (ver más abajo).
+5. Subí los cambios. El sitio se regenera solo.
 
 Los nombres de archivo que empiezan con `_` o `.` se ignoran (sirven para borradores).
 
@@ -87,14 +91,55 @@ imagenes/
     └── figura-1-demanda.png
 ```
 
-Se referencian desde el Markdown con rutas relativas:
+Se referencian desde el Markdown con rutas relativas. Ojo con la profundidad: el `.md` vive
+en `contenido/publicaciones/`, así que para llegar a la raíz del repositorio hacen falta
+**dos** niveles (`../../`):
 
 ```markdown
-![Proyección de demanda](../imagenes/informe-2-26/figura-1-demanda.png)
+![Proyección de demanda](../../imagenes/informe-2-26/figura-1-demanda.png)
 ```
 
 Formatos recomendados: **PNG** para gráficos y **JPG/WebP** para fotografías. Evitá archivos
 de más de 1–2 MB; conviene comprimirlos antes de subirlos.
+
+## PDFs oficiales
+
+Los PDFs de los informes viven en la carpeta `documentos/` de este repositorio.
+
+```markdown
+---
+titulo: Informe Técnico Nº 2/26
+pdf: informe-2-26.pdf
+---
+```
+
+El campo `pdf` del frontmatter admite dos formas:
+
+| Valor | Dónde vive el archivo |
+|-------|-----------------------|
+| `informe-2-26.pdf` | En `documentos/` de este repositorio. Es lo habitual. |
+| `documentos/informe-2-26.pdf` | Igual que el anterior (la carpeta es opcional). |
+| `/documentos/archivo.pdf` | En el propio sitio web (solo para archivos ya alojados allí). |
+
+Con esto, el botón **PDF** de la tarjeta y el de **Descargar PDF** del visor apuntan solos al
+archivo: **no hay que tocar el código del sitio**.
+
+Para enlazar un PDF dentro del texto del informe, usá la ruta relativa a la raíz:
+
+```markdown
+[Descargar el informe completo](../../documentos/informe-2-26.pdf)
+```
+
+## Enlaces
+
+Los enlaces se resuelven solos según su destino:
+
+| En el Markdown | Resultado |
+|----------------|-----------|
+| `[texto](https://ejemplo.com)` | Se abre en una pestaña nueva. |
+| `[otro informe](./informe-2-26.md)` | Abre ese informe en el visor del sitio. |
+| `[un PDF](../../documentos/x.pdf)` | Descarga el archivo del repositorio. |
+| `#seccion` | Salta a esa sección del mismo documento. |
 
 ## Convenciones
 
@@ -102,8 +147,41 @@ de más de 1–2 MB; conviene comprimirlos antes de subirlos.
 - **Fechas:** siempre ISO (`AAAA-MM-DD`). Sin comillas en el YAML.
 - **Un solo `#` (H1)** por documento, o ninguno: el sitio usa el `titulo` del frontmatter.
 - **Secciones:** usá `##` para las secciones principales; el sitio genera el índice a partir de ellas.
-- **Enlaces internos** entre informes: `[ver el informe anterior](./informe-2-26.md)`.
 - **Mojibake:** guardá los archivos en UTF-8 sin BOM para que las tildes y `–` se vean bien.
+
+### Markdown extendido
+
+Además del Markdown habitual (títulos, listas, tablas, negrita, enlaces, imágenes), el visor
+del sitio entiende:
+
+**Notas al pie**
+
+```markdown
+El factor de planta[^1] incide en la energía firme.
+
+[^1]: Relación entre la energía generada y la que se generaría a potencia nominal.
+```
+
+**Diagramas (Mermaid)**
+
+````markdown
+```mermaid
+graph TD
+  A[Oferta] --> B[Demanda]
+```
+````
+
+**Fórmulas (LaTeX)**
+
+```markdown
+En línea: $E = mc^2$
+
+En bloque:
+
+$$
+\eta = \frac{P_{salida}}{P_{entrada}}
+$$
+```
 
 ## Licencia y uso
 

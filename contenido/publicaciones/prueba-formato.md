@@ -1,14 +1,17 @@
 ---
-titulo: "Documento de prueba de formato"
+titulo: "Documento de referencia: formato Markdown admitido"
 fecha: 2026-10-20
-categoria: diagnostico
-autor: "Comité Técnico Asesor"
-extracto: "Documento interno para verificar notas al pie, enlaces, tablas, diagramas y fórmulas en el visor."
+categoria: opinion
+autor: "Equipo técnico IPPSE"
+extracto: "Plantilla de referencia con todos los recursos de formato que acepta el visor: notas al pie, enlaces, tablas, imágenes, diagramas y fórmulas. No es un informe técnico."
 lectura: 3
 estado: publicado
-etiquetas: ["prueba", "formato"]
+etiquetas: ["plantilla", "formato", "referencia"]
 destacado: false
 ---
+
+> **Este archivo es una plantilla de referencia, no un informe técnico.** Sirve para copiar
+> el formato (notas al pie, enlaces, tablas, diagramas y fórmulas) al redactar informes nuevos.
 
 ## Notas al pie
 
