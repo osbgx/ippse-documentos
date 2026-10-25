@@ -61,26 +61,27 @@ El siguiente esquema ubica cada alternativa en el tiempo, en relación con el �
 
 ```mermaid
 gantt
-    title Habilitación estimada de nuevas fuentes (si se decide en 2027)
-    dateFormat YYYY
-    axisFormat %Y
+    title Cronograma Estimado de Habilitación de Nuevas Fuentes (Inicio en 2027)
+    dateFormat  YYYY-MM-DD
+    axisFormat  %Y
+    tickInterval 2year
 
-    section Solución más temprana
-    Solar + Baterías (3-4 años)        :solar, 2027, 4y
-    Interconexión Brasil (4-5 años)    :brasil, 2027, 5y
-    Interconexión Argentina (4-5 años) :arg, 2027, 5y
+    section Alerta Nacional
+    Lapso Crítico (Déficit Potencia/Energía) :crit, active, lapso1, 2028-01-01, 2030-12-31
 
-    section Complementarias
-    Hidroeléctricas ríos interiores    :hri, 2027, 19y
-    Eólica (5-7 años)                  :eolica, 2027, 7y
+    section Corto Plazo
+    Solar + Baterías (3-4 años)           :done, 2027-01-01, 2030-12-31
+    Interconexión Brasil (4-5 años)       :done, 2027-01-01, 2031-12-31
+    Interconexión Argentina (4-5 años)    :done, 2027-01-01, 2031-12-31
 
-    section Energía firme
-    Termoeléctricas (7-10 años)        :termo, 2027, 10y
-    Binacionales (10-14 años)          :bina, 2027, 14y
-    Nucleares SMR (12-15 años)         :smr, 2027, 15y
+    section Mediano Plazo
+    Eólicas (5-7 años)                    :active, 2032-01-01, 2035-12-31
+    Ríos Interiores (5-6 años c/u)        :active, 2032-01-01, 2035-12-31
+    Termoeléctricas (7-10 años)           :active, 2034-01-01, 2037-12-31
 
-    section Referencia
-    Lapso crítico 2028-2030            :critico, 2028, 3y
+    section Largo Plazo
+    Binacionales (10-14 años)             :2037-01-01, 2041-12-31
+    Nucleares SMR (12-15 años)            :2039-01-01, 2042-12-31
 ```
 
 ---
@@ -127,8 +128,8 @@ Sería realizada en 2 etapas, con financiamiento de la [EBY](https://eby.gov.py/
 
 | Etapa | Alcance | Costo directo | Costo unitario |
 |---|---|---|---|
-| Primera | 3 unidades de 155 MW (operan sin Embalse Compensador) | US$ 1.120 millones | 2.400 US$/kW |
-| Segunda | 7 unidades de 155 MW (requiere Embalse Compensador previo: ITACORÁ-ITATÍ o ITAYBATÉ) | US$ 2.600 millones | 2.400 US$/kW |
+| Primera | 3 unidades de 155 MW (operan sin Embalse Compensador) | US\$ 1.120 millones | 2.400 US\$/kW |
+| Segunda | 7 unidades de 155 MW (requiere Embalse Compensador previo: ITACORÁ-ITATÍ o ITAYBATÉ) | US\$ 2.600 millones | 2.400 US\$/kW |
 
 **Cronograma estimado:** plazo total 14 años
 *   **2027 – 2031 (5 años):** Negociaciones con Argentina, estudios varios (factibilidad, impacto social y ambiental, etc.), licencias, ingeniería, forma de construcción y financiamiento, elaboración PBC, licitaciones, adjudicaciones y contratos.
@@ -138,7 +139,7 @@ Sería realizada en 2 etapas, con financiamiento de la [EBY](https://eby.gov.py/
 *   **Operación:**
     *   Primera Etapa: 2035 – 2036 (3 unidades, 10 años)
     *   Segunda Etapa (*): 2038 – 2040 (7 unidades, 14 años)
-    *   *(*) Fecha estimada de habilitación del Embalse Compensador ITACORÁ-ITATÍ*
+    *   *(\*) Fecha estimada de habilitación del Embalse Compensador ITACORÁ-ITATÍ*
 
 > **Nota:** si en el 2027 se decide realizar este proyecto, entraría en operación recién a finales de la década del 2030. En esa época, su capacidad de 775 MW (aprox.) para el Paraguay, cubriría solamente el crecimiento de 1 año de la Demanda nacional, según las proyecciones.
 
@@ -164,7 +165,7 @@ Su realización está relacionada con:
 *   Actualización/realización de estudios avanzados de factibilidad técnica, económica, financiera y ambiental para el emprendimiento.
 *   Definición de la forma para construir y financiar la obra: estatal, privado (concesión), asociación público-privada, etc.
 
-**Costo estimado:** US$ 5.000 millones costo directo; 3.000 US$/kW instalado; LCOE 38 USD/MWh sin regalías (*Levelized Cost of Energy* – Costo nivelado de la Energía). El financiamiento dependerá del método para realizar el emprendimiento.
+**Costo estimado:** US\$ 5.000 millones costo directo; 3.000 US\$/kW instalado; LCOE 38 USD/MWh sin regalías (*Levelized Cost of Energy* – Costo nivelado de la Energía). El financiamiento dependerá del método para realizar el emprendimiento.
 
 **Cronograma estimado:** plazo total 14 años
 *   **2027 – 2032 (6 años):** Negociaciones con Argentina, estudios varios (factibilidad, impacto social y ambiental, etc.), licencias, ingeniería, forma de construcción y financiamiento, elaboración PBC, licitaciones, adjudicaciones y contratos.
@@ -203,7 +204,7 @@ Su realización está relacionada con:
 *   Revisión del “Acuerdo Tripartito entre Paraguay, Brasil y Argentina referente al aprovechamiento hidroeléctrico del Río Paraná”, suscrito el 19.10.1979, por el cual se establecieron condiciones para la construcción y operación de la futura CH CORPUS y para la operación de la CH ITAIPU, a fin de optimizar la producción de ésta, y al mismo tiempo, la navegación del río Paraná aguas abajo.
 *   Actualización de estudios y negociaciones sobre los efectos del embalse de la CH CORPUS sobre el salto y la operación de CH ITAIPU y CH ACARAY.
 
-**Costo estimado:** US$ 7.500 millones costo directo; 2.600 US$/kW instalado; LCOE 33 USD/MWh sin regalías (*Levelized Cost of Energy* – Costo nivelado de la Energía). El financiamiento dependerá del método para realizar el emprendimiento.
+**Costo estimado:** US\$ 7.500 millones costo directo; 2.600 US\$/kW instalado; LCOE 33 USD/MWh sin regalías (*Levelized Cost of Energy* – Costo nivelado de la Energía). El financiamiento dependerá del método para realizar el emprendimiento.
 
 **Cronograma estimado:** plazo total 13 años
 *   **2027 – 2032 (6 años):** Negociaciones con Argentina y con Brasil, levantamiento Plebiscito de Misiones, estudios varios (factibilidad, impacto social y ambiental, etc.), licencias, ingeniería, forma de construcción y financiamiento, elaboración PBC, licitaciones, adjudicaciones y contratos.
@@ -233,7 +234,7 @@ Su realización está relacionada con:
 | Operación | Central de “Punta” |
 | Ubicación | entre el Vertedero y la Subestación Margen Derecha, por motivos de construcción |
 
-**Costo estimado:** US$ 1.600 millones costo directo; 1.150 US$/kW instalado. El financiamiento será definido por las Altas Partes.
+**Costo estimado:** US\$ 1.600 millones costo directo; 1.150 US\$/kW instalado. El financiamiento será definido por las Altas Partes.
 
 **Cronograma estimado:** plazo total 10 años
 *   **2027 – 2031 (5 años):** Negociaciones con Brasil y con Argentina, estudios varios (factibilidad, impacto social y ambiental, etc.), licencias, ingeniería, forma de construcción y financiamiento, elaboración PBC, licitaciones, adjudicaciones y contratos.
@@ -254,10 +255,10 @@ Así, y hasta tanto, no puede ser considerada como alternativa real para dispone
 
 | Emprendimiento | Potencia | Energía | Inversión (costo directo) | Costo unitario | LCOE | Plazo | Para el Paraguay |
 |---|---|---|---|---|---|---|---|
-| Ampliación YACYRETÁ | 1.550 MW (+10 máq.) | 1.200 GWh/año | US$ 1.120 + 2.600 M | 2.400 US$/kW | — | 14 años | 775 MW |
-| ITACORÁ – ITATÍ | 1.660 MW | 11.300 GWh/año | US$ 5.000 M | 3.000 US$/kW | 38 USD/MWh | 14 años | 830 MW |
-| CORPUS CHRISTI (PINDOÍ) | 2.880 MW | 20.175 GWh/año | US$ 7.500 M | 2.600 US$/kW | 33 USD/MWh | 13 años | 1.440 MW |
-| Ampliación ITAIPU | 1.400 MW | 3.000 GWh/año | US$ 1.600 M | 1.150 US$/kW | — | 10 años | 700 MW |
+| Ampliación YACYRETÁ | 1.550 MW (+10 máq.) | 1.200 GWh/año | US\$ 1.120 + 2.600 M | 2.400 US\$/kW | — | 14 años | 775 MW |
+| ITACORÁ – ITATÍ | 1.660 MW | 11.300 GWh/año | US\$ 5.000 M | 3.000 US\$/kW | 38 USD/MWh | 14 años | 830 MW |
+| CORPUS CHRISTI (PINDOÍ) | 2.880 MW | 20.175 GWh/año | US\$ 7.500 M | 2.600 US\$/kW | 33 USD/MWh | 13 años | 1.440 MW |
+| Ampliación ITAIPU | 1.400 MW | 3.000 GWh/año | US\$ 1.600 M | 1.150 US\$/kW | — | 10 años | 700 MW |
 
 Los plazos de habilitación se ubican entre 10 y 14 años: quedan por fuera del “lapso crítico 2028-2030”.
 
@@ -314,7 +315,7 @@ Desde luego, no pueden descartarse a priori los aprovechamientos con potencial i
 **Costo estimado:** entre 2.500 y 3.000 USD/kW instalado; LCOE entre 50 y 70 USD/MWh
 
 **Cronograma estimado y acciones requeridas:** 5 a 6 años cada uno (en promedio) y la totalidad podría llevar entre 15 y 20 años, por la necesidad de mayor desarrollo de esas posibilidades preliminares, por la complejidad que conllevan y por los esfuerzos que se requerirán para realizarlos, tales como (*) gestiones y estudios varios (localización, topografía, terrenos afectados, histórico de mediciones de caudales; factibilidad técnica y económica; impacto social y ambiental; obtención de licencias; forma de construcción y financiamiento; etc.)
-*(*) Procesos según correspondan, encarados por [ANDE](https://www.ande.gov.py/), instituciones responsables y/o inversionistas interesados.*
+*(\*) Procesos según correspondan, encarados por [ANDE](https://www.ande.gov.py/), instituciones responsables y/o inversionistas interesados.*
 
 **Otras Centrales:** además de las posibilidades antes mencionadas, también se dispone de los siguientes proyectos preliminares que necesitan más desarrollo y cuya realización llevaría más de 10 años, largo plazo. Por lo tanto, aún no pueden ser considerados como alternativas reales para disponer de más Potencia y Energía a fin de atender a los requerimientos futuros.
 *   Maquinización de la Presa Yguazú, Potencia 70 MW y Energía 359 GWh/año; previsto en el Plan Maestro de Generación de la ANDE (nivel: estudios básicos).
@@ -370,7 +371,7 @@ Estos costos dependen de la ubicación geográfica de la instalación, de la cap
 **Acciones requeridas:**
 *   Los datos e informaciones disponibles son potenciales y suficientes, con los cuales se pueden profundizar estudios para desarrollar y realizar proyectos de porte significativo que contribuyan a los requerimientos futuros de Potencia y Energía del sistema eléctrico nacional.
 *   Luego serán necesarios varios procesos (*) para realizarlos, tales como gestiones y estudios varios (localización, topografía, terrenos afectados, mediciones de radiación solar; factibilidad técnica y económica; impacto social y ambiental; obtención de licencias; forma de construcción y financiamiento; etc.)
-*   *(*) Procesos según correspondan, encarados por [ANDE](https://www.ande.gov.py/), instituciones responsables y/o inversores interesados.*
+*   *(\*) Procesos según correspondan, encarados por [ANDE](https://www.ande.gov.py/), instituciones responsables y/o inversores interesados.*
 
 **❖ PARQUES SOLARES FLOTANTES:**
 El gran espejo de agua del embalse de la Presa de ITAIPU puede ser aprovechado para instalar Parques Solares Flotantes de gran capacidad con almacenamiento mediante Baterías, lo que representará beneficios para Paraguay y Brasil, así como para la propia ITAIPU.
@@ -412,7 +413,7 @@ Asimismo, indican que las regiones con mayor potencial (zonas abiertas y zonas e
 **Acciones requeridas:**
 *   Los datos e informaciones disponibles son preliminares, por lo que se requiere profundizar estudios (entre ellos, mayor precisión de velocidad y frecuencia de los vientos, regiones más propicias) para desarrollar y realizar proyectos específicos de porte significativo, con capacidades reales, que contribuyan a los requerimientos futuros de Potencia y Energía del sistema eléctrico nacional; actualmente no se conoce ninguno en forma oficial.
 *   Luego serán necesarios varios procesos (*) para realizarlos, tales como gestiones y estudios varios (localización, topografía, terrenos afectados; factibilidad técnica y económica; impacto social y ambiental; obtención de licencias; forma de construcción y financiamiento; etc.)
-*   *(*) Procesos según correspondan, encarados por [ANDE](https://www.ande.gov.py/), instituciones responsables y/o inversionistas interesados.*
+*   *(\*) Procesos según correspondan, encarados por [ANDE](https://www.ande.gov.py/), instituciones responsables y/o inversionistas interesados.*
 
 **Bibliografía:**
 *   ATLAS DEL POTENCIAL ENERGÉTICO SOLAR Y EÓLICO DEL PARAGUAY, elaborado por [ITAIPU Binacional](https://www.itaipu.gov.py/), Fundación Parque Tecnológico ITAIPU (FPTI_PY) - Año 2014
@@ -463,7 +464,7 @@ Estos costos dependen de la ubicación geográfica de la instalación, del tipo,
 **Acciones requeridas:**
 *   Para desarrollar y realizar proyectos específicos de capacidad adecuada que contribuyan a los requerimientos futuros de Potencia y Energía del sistema eléctrico nacional, es necesario concretar acuerdos reales para la disponibilidad del gas natural a ser importado de la Argentina, y de ajustes de la legislación nacional para contar con este combustible, conforme a los antecedentes mencionados; disponer de este recurso propio será estratégico para nuestro uso soberano. Asimismo, será importante incentivar la utilización de otros tipos de combustibles nacionales.
 *   Luego serán necesarios varios procesos (*) para realizarlos, tales como gestiones y estudios varios (localización; factibilidad técnica y económica; impacto social y ambiental; obtención de licencias; forma de construcción y financiamiento; etc.)
-*   *(*) Procesos según correspondan, encarados por [ANDE](https://www.ande.gov.py/), instituciones responsables y/o inversionistas interesados.*
+*   *(\*) Procesos según correspondan, encarados por [ANDE](https://www.ande.gov.py/), instituciones responsables y/o inversionistas interesados.*
 
 **Bibliografía:**
 *   Publicaciones técnicas internacionales.
@@ -508,7 +509,7 @@ Estos costos dependerán de la ubicación geográfica de la instalación, de la 
 *   Para desarrollar y realizar proyectos específicos de utilización de la energía nuclear (SMR), que contribuyan a los requerimientos futuros de Potencia y Energía del sistema eléctrico nacional, será necesario concretar procesos y cumplir exigencias internacionales conforme a lo mencionado.
 *   Asimismo, habrá que adecuar el marco regulatorio nacional para garantizar la seguridad con estrictos controles, capacitación e información a la ciudadanía, y contar con profesionales altamente especializados.
 *   Luego serán necesarios varios procesos (*) para realizarlos, tales como gestiones y estudios varios (localización; factibilidad técnica y económica; impacto social y ambiental; obtención de licencias; forma de construcción y financiamiento; etc.)
-*   *(*) Procesos según correspondan, encarados por [ANDE](https://www.ande.gov.py/), instituciones responsables y/o inversionistas interesados.*
+*   *(\*) Procesos según correspondan, encarados por [ANDE](https://www.ande.gov.py/), instituciones responsables y/o inversionistas interesados.*
 
 **Bibliografía:**
 *   PLAN NUCLEAR DEL PARAGUAY - Autoridad Reguladora Radiológica y Nuclear del Paraguay ([ARRN](https://www.arrn.gov.py/))
